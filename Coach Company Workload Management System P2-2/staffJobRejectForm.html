@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="css/nav.css" />
+<link rel="stylesheet" type="text/css" href="css/form.css" />
+<link rel="stylesheet" type="text/css" href="css/expansionbar.css" />
+
+<script src="js/expansionbar.js"></script>
+<script src="js/nav.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+<link rel="stylesheet" type="text/css"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<head>
+  <title>Coach Company Workload Management System</title>
+</head>
+
+<body>
+
+  <body id="body-pd">
+    <header class="header" id="header">
+      <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+      <nav class="nav">
+          <!-- <div> <a href="home.html"> <img src="images/bus.png" id="icon" alt="User Icon"
+                      style="border-radius: 500px;" />
+              </a> -->
+          <div class="nav_list">
+              <a href="staffLandingPage.html" class="nav_link" style="text-decoration:none">
+                  <i class='bx bxs-home' i style="font-size: 25px;"></i>
+                  <span class="nav_name">Create Jobs</span> </a>
+
+              <a href="staffAvailiability.html" class="nav_link" style="text-decoration:none">
+                  <i class='bx bx-calendar' i style="font-size: 25px;"></i>
+                  <span class="nav_name">Staff Workload</span> </a>
+
+              <a href="staffAddAvailability.html" class="nav_link" style="text-decoration:none">
+                  <i class='bx bx-calendar-plus' i style="font-size: 25px;" ></i>
+                  <span class="nav_name">Add Availability</span> </a>
+
+              <a href="staffEditAvailibility.html" class="nav_link" style="text-decoration:none">
+                  <i class='bx bx-calendar-edit' i style="font-size: 25px;"  ></i>
+                  <span class="nav_name">Edit Availability</span> </a>
+
+              <a href="staffJobRejectForm.html" class="nav_link" style="text-decoration:none">
+                  <i class='bx bx-message-rounded-x' i style="font-size: 25px;" ></i>
+                  <span class="nav_name">Job Rejection Request</span></a>
+
+              <a href="login.html" class="nav_link" style="text-decoration:none">
+                  <i class='bx bxs-log-out' i style="font-size: 25px;"></i>
+                  <span class="nav_name">Sign Out</span> </a>
+          </div>
+  </nav>
+  </div>
+
+    <main>
+      <br><br>
+      <div class="wrapper" id="app">
+        <div class="card-form">
+          <br><br>
+          <div class="card-form__inner">
+
+            <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images/bus.png" style="width: 160px; height: 182px; background-color: antiquewhite; box-shadow: 0 5px 10px 0 rgba(90, 116, 148, 0.4);
+                  border-radius: 10px;" class="img-fluid rounded-start" alt="...">
+              </div>
+              <br><br><br><br><br>
+              <div class="col-md-8">
+                <div class="card-body" style="box-shadow: 0 5px 10px 0 rgba(90, 116, 148, 0.4);
+                  border-radius: 10px; height: 182px">
+
+                  <h4 class="card-title">Job Rejection Request</h4>
+                  <br>
+                  <p class="card-text">Please enter the following details accordingly and ensure you have spoken with the manager</p>
+                  <!-- <p class="card-text">123</p> -->
+
+
+                  <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+
+            <br><br>
+
+            </div>
+
+            <br><br>
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="card-input">
+                <label class="card-input__label">Job Location *</label>
+                <input type="text" class="card-input__input" placeholder="The 4 locations" style="font-size: 14px;" required>
+                <div class="invalid-feedback">Please fill in required field</div>
+              </div>
+              <div class="card-input">
+                <label class="card-input__label">Job Date *</label>
+                <input type="text" class="card-input__input" placeholder="eg. 14-21Nov, 24-28Nov" style="font-size: 14px;" required>
+                <div class="invalid-feedback">Please fill in required field</div>
+              </div>
+              <div class="card-input">
+                <label class="card-input__label">State reason for rejection *</label>
+                <input type="text" class="card-input__input" placeholder="" style="font-size: 14px;" required>
+                <div class="invalid-feedback">Please fill in required field</div>
+              </div>
+
+              <br>
+
+              <center>
+                <button type="button"
+                  class="btn btn-outline-danger btn-lg">Cancel <i class='bx bxs-chevron-left-circle'
+                    style="font-size: 20px;"></i></button>
+                &nbsp &nbsp
+                <button type="submit" class="btn btn-outline-success btn-lg">Submit<i class='bx bxs-check-circle'
+                    style="font-size: 20px;"></i></button>
+
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4><b>Job Reject Form Confirmation</b></h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <b>Job Location:</b> <text style="color: red;">Malacca</text><br>
+                        <b>Job Date:</b> <text style="color: red;">27/11/2022</text> <br>
+                        <b>State reason for rejection:</b> <text style="color: red;">Got something on</text><br>
+                      
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary"
+                          data-bs-toggle="modal" data-bs-target="#exampleModal2">Confirm</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <i class='bx bxs-check-circle' style="font-size: 20px;"></i> Job rejection request has been submitted!
+                              </div>
+                              <div class="modal-footer">
+                                <a href="staffLandingPage.html">
+                                  <button type="button" class="btn btn-primary">OK</button>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <br><br>
+
+                <button type="button" onclick="document.location='staffLandingPage.html'" class="btn btn-outline-dark btn-lg">Back
+                  to Home <i class='bx bxs-home' style="font-size: 20px;"></i></button>
+              </center>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+
+    </main>
+
+  </body>
+
+</body>
+
+<br><br>
+
+</html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    (() => {
+      'use strict';
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation');
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms).forEach((form) => {
+        form.addEventListener('submit', (event) => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          else {
+            event.preventDefault();
+            $('#exampleModal1').modal('show');
+          }
+          form.classList.add('was-validated');
+        }, false);
+
+      });
+
+    })();
+
+  });
+</script>
